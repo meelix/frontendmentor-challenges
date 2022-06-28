@@ -34,8 +34,8 @@ body {
 
 .card {
     border-radius: 12px;
-    padding: 1.3rem;
-    margin-bottom: 1.3rem;
+    padding: 1.4rem;
+    margin-bottom: 1.4rem;
     margin-left: auto;
     margin-right: auto;
     width: clamp(260px, 100%, 375px);
@@ -71,7 +71,7 @@ h2 {
 
 hr {
     background-color: var(--c-beige);
-    margin: 1.3rem 0;
+    margin: 1.5rem 0;
     border: none;
     height: 3px;
 }
@@ -79,6 +79,7 @@ hr {
 .total-diff {
     display: flex;
     justify-content: space-between;
+    padding-bottom: .4rem;
 }
 
 .total-diff *:last-child {
@@ -96,7 +97,7 @@ hr {
 .chart .bar {
     display: block;
     background-color: var(--c-orange);
-    border-radius: 3px;
+    border-radius: 4px;
     width: 100%;
     position: relative;
     transition: background-color .2s ease-in;
@@ -222,14 +223,14 @@ hr {
 
     .card {
         border-radius: 14px;
-        width: clamp(260px, 100%, 400px);
+        width: clamp(260px, 100%, 420px);
     }
 
     h1,
     h2 {
         margin: 0;
         color: currentColor;
-        font-size: 1.4rem;
+        font-size: 1.47rem;
     }    
 
     .title {
@@ -265,6 +266,8 @@ hr {
 
     .chart {
         gap: 14px;
+        height: 240px;
+        padding-top: 2.7rem;
     }
 
     .chart .day {
@@ -273,7 +276,7 @@ hr {
 
     .chart .info {
         top: -44px;
-        font-size: .75rem;
+        font-size: .8rem;
     }
 }
 

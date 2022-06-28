@@ -227,7 +227,7 @@ hr {
 
     .card {
         border-radius: 14px;
-        width: clamp(260px, 100%, 480px);
+        width: clamp(260px, 100%, 500px);
     }
 
     h1,

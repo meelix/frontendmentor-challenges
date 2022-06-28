@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="card bg-orange">
+      <div>
+        <div class="title">My balance</div>
+        <div class="balance">$921.48</div>
+      </div>
+      <div class="icon"></div>
+    </div>
+
+    <div class="card bg-white">
+      <h2>Spending - Last 7 days</h2>
+
+      <div class="chart">
+        <button data-day="mon">
+          <div class="bar">
+            <div class="info"></div>
+          </div>
+          <div class="day">mon</div>
+        </button>
+        <button data-day="tue">
+          <div class="bar">
+            <div class="info"></div>
+          </div>
+          <div class="day">tue</div>
+        </button>
+        <button data-day="wed">
+          <div class="bar">
+            <div class="info"></div>
+          </div>
+          <div class="day">wed</div>
+        </button>
+        <button data-day="thu">
+          <div class="bar">
+            <div class="info"></div>
+          </div>
+          <div class="day">thu</div>
+        </button>
+        <button data-day="fri">
+          <div class="bar">
+            <div class="info"></div>
+          </div>
+          <div class="day">fri</div>
+        </button>
+        <button data-day="sat">
+          <div class="bar">
+            <div class="info"></div>
+          </div>
+          <div class="day">sat</div>
+        </button>
+        <button data-day="sun">
+          <div class="bar">
+            <div class="info"></div>
+          </div>
+          <div class="day">sun</div>
+        </button>
+      </div>
+
+      <hr>
+
+      <footer>
+        <div>
+          <div class="title">Total this month</div>
+          <h2 class="total">$478.33</h2>
+        </div>
+        
+        <div style="text-align: right;">
+          <div class="diffrence">+2.4%</div>
+          <div class="title">from last month</div>
+        </div>
+      </footer>
+
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/meelix">Meelix</a>.
+    </div>
+  </div>
+
+  <script defer src="data.js"></script>
+</body>
+
+</html>

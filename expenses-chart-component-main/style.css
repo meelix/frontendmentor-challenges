@@ -19,7 +19,7 @@ body {
     display: flex;
 }
 
-.wrapper {
+main {
     margin: auto;
     padding: 1rem;
     width: 100%;
@@ -45,9 +45,6 @@ h1,
 h2 {
     margin: 0;
     color: currentColor;
-}
-
-h2 {
     font-size: 1.35rem;
 }
 
@@ -79,12 +76,12 @@ hr {
     height: 3px;
 }
 
-footer {
+.total-diff {
     display: flex;
     justify-content: space-between;
 }
 
-footer *:last-child {
+.total-diff *:last-child {
     margin-top: auto;
 }
 
@@ -140,7 +137,7 @@ footer *:last-child {
     opacity: .5;
 }
 
-.chart button {
+.chart a {
     appearance: none;
     padding: 0;
     margin: 0;
@@ -152,28 +149,28 @@ footer *:last-child {
     background-color: var(--c-blue);
 }
 
-.chart button:hover,
-.chart button:focus,
-.chart button:active {
+.chart a:hover,
+.chart a:focus,
+.chart a:active {
     transition: opacity .2s ease-in, transform .16s ease-in;
 }
 
-.chart button:hover .info,
-.chart button:focus .info,
-.chart button:active .info {
+.chart a:hover .info,
+.chart a:focus .info,
+.chart a:active .info {
     opacity: 1;
     transform: scale(1);
 }
 
-.chart button:hover .bar,
-.chart button:focus .bar,
-.chart button:active .bar {
+.chart a:hover .bar,
+.chart a:focus .bar,
+.chart a:active .bar {
     background-color: var(--c-orange_active);
 }
 
-.chart button.today:hover .bar,
-.chart button.today:focus .bar,
-.chart button.today:active .bar {
+.chart a.today:hover .bar,
+.chart a.today:focus .bar,
+.chart a.today:active .bar {
     background-color: var(--c-blue_active);
 }
 
@@ -216,15 +213,6 @@ footer *:last-child {
 
 .bg-white {
     background-color: var(--c-white);
-}
-
-.attribution {
-    margin-top: 1.25rem;
-}
-
-.attribution a:hover,
-.attribution a:focus {
-    text-decoration: none;
 }
 
 @media (min-width: 1440px) {

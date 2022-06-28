@@ -221,16 +221,20 @@ hr {
         font-size: 20px;
     }
 
+    main {
+        padding-top: 39px;
+    }
+
     .card {
         border-radius: 14px;
-        width: clamp(260px, 100%, 420px);
+        width: clamp(260px, 100%, 480px);
     }
 
     h1,
     h2 {
         margin: 0;
         color: currentColor;
-        font-size: 1.6rem;
+        font-size: 1.75rem;
     }    
 
     .title {
@@ -242,11 +246,11 @@ hr {
     }
 
     hr {
-        margin: 1.55rem 0;
+        margin: 1.65rem 0 1.8rem;
     }
 
     .total {
-        font-size: 2rem;
+        font-size: 2.7rem;
     }
 
     .diffrence {
@@ -273,7 +277,7 @@ hr {
 
     .chart {
         gap: 14px;
-        height: 240px;
+        height: 270px;
         padding-top: 3rem;
     }
 

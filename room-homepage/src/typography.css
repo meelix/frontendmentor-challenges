@@ -1,0 +1,65 @@
+/* league-spartan-500 - latin */
+@font-face {
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+        url('./fonts/league-spartan-v5-latin-500.woff2') format('woff2'),
+        url('./fonts/league-spartan-v5-latin-500.woff') format('woff');
+}
+
+/* league-spartan-600 - latin */
+@font-face {
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+        url('./fonts/league-spartan-v5-latin-600.woff2') format('woff2'),
+        url('./fonts/league-spartan-v5-latin-600.woff') format('woff');
+}
+
+/* league-spartan-700 - latin */
+@font-face {
+    font-family: 'League Spartan';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('./fonts/league-spartan-v5-latin-700.woff2') format('woff2'),
+        url('./fonts/league-spartan-v5-latin-700.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('./fonts/icomoon.woff?n2w1k1') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon-angle-left:before {
+    content: "\e900";
+}
+
+.icon-icon-angle-right:before {
+    content: "\e901";
+}
+
+.icon-icon-arrow:before {
+    content: "\e902";
+}

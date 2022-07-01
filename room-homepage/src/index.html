@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+
+    <title>Frontend Mentor | Room homepage</title>
+
+    <style>
+        :root {
+            --logo-size: 62;
+            --burger-size: 20;
+        }
+    </style>
+</head>
+
+<body>
+    <svg class="logo-mask" width="0" height="0">
+        <defs>
+            <mask id="logo-mask">
+                <path style="transform:scale(var(--logo-size))" d="M 0.04841532,0.20532763 V 0.08671981 c 0,-0.0077776 0.0023009,-0.01503662 0.0069026,-0.02177717 a 0.05444293,0.05444293 0 0 1 0.0179856,-0.01652732 c 0.0073887,-0.0042777 0.01523106,-0.0064165 0.02352712,-0.0064165 0.0047962,0 0.01001361,7.7776e-4 0.01565235,0.0023333 0.005639,0.0015555 0.0105969,0.0036295 0.0148746,0.006222 L 0.14738479,0.00952751 A 0.06930132,0.06930132 0 0 0 0.12959362,0.00262493 0.08287964,0.08287964 0 0 0 0.10927474,0 C 0.09670102,0 0.0851643,0.00301381 0.07466459,0.00904142 0.06416488,0.01506903 0.05541513,0.02378638 0.04841532,0.03519347 V 0.00622205 H 0 v 0.19910558 z m 0.21829023,0.006222 c 0.0215179,0 0.0409294,-0.004472 0.0582345,-0.0134163 a 0.10379804,0.10379804 0 0 0 0.0410266,-0.0373323 c 0.010046,-0.015944 0.015069,-0.0342861 0.015069,-0.0550263 0,-0.02086979 -0.005023,-0.03924428 -0.015069,-0.05512347 A 0.10404109,0.10404109 0 0 0 0.32494005,0.01341629 C 0.30763497,0.0044721 0.28822348,0 0.26670555,0 0.24505801,0 0.2256141,0.0044721 0.20837384,0.01341629 A 0.10493227,0.10493227 0 0 0 0.1673472,0.05065137 C 0.1572364,0.06653056 0.152181,0.08490505 0.152181,0.10577484 c 0,0.0207402 0.005055,0.0390823 0.0151662,0.0550263 a 0.10451099,0.10451099 0 0 0 0.0411239,0.0373323 c 0.0173051,0.008944 0.0367166,0.0134163 0.0582345,0.0134162 z m 0,-0.04161 c -0.0120552,0 -0.0229438,-0.002755 -0.0326658,-0.008264 A 0.06042193,0.06042193 0 0 1 0.21109599,0.1389267 c -0.005574,-0.009657 -0.008361,-0.0207078 -0.008361,-0.0331519 0,-0.01257373 0.002787,-0.02368916 0.008361,-0.0333463 A 0.05972519,0.05972519 0 0 1 0.2340398,0.0497764 C 0.2437618,0.0443321 0.2546503,0.04161 0.2667056,0.04161 c 0.0121848,0 0.0231058,0.0027221 0.032763,0.0081664 a 0.05991963,0.05991963 0 0 1 0.0228466,0.02265214 c 0.005574,0.0096571 0.008361,0.02077257 0.008361,0.0333463 0,0.0124441 -0.002787,0.0234947 -0.008361,0.0331519 a 0.06061637,0.06061637 0 0 1 -0.0228466,0.0227494 c -0.009657,0.005509 -0.0205781,0.008264 -0.032763,0.008263 z m 0.2544559,0.04161 c 0.0215179,0 0.0409294,-0.004472 0.0582345,-0.0134163 a 0.10379804,0.10379804 0 0 0 0.0410266,-0.0373323 c 0.010046,-0.015944 0.015069,-0.0342861 0.015069,-0.0550263 0,-0.02086979 -0.005023,-0.03924428 -0.015069,-0.05512347 A 0.10404109,0.10404109 0 0 0 0.57939594,0.01341629 C 0.56209087,0.0044721 0.54267937,0 0.52116145,0 0.4995139,0 0.48007,0.0044721 0.46282974,0.01341629 A 0.10493227,0.10493227 0 0 0 0.4218031,0.05065137 C 0.4116923,0.06653056 0.4066369,0.08490505 0.4066369,0.10577484 c 0,0.0207402 0.005055,0.0390823 0.0151662,0.0550263 a 0.10451099,0.10451099 0 0 0 0.0411239,0.0373323 c 0.0173051,0.008944 0.0367166,0.0134163 0.0582345,0.0134162 z m 0,-0.04161 c -0.0120552,0 -0.0229438,-0.002755 -0.0326658,-0.008264 A 0.06042193,0.06042193 0 0 1 0.46555188,0.1389267 c -0.005574,-0.009657 -0.008361,-0.0207078 -0.008361,-0.0331519 0,-0.01257373 0.002787,-0.02368916 0.008361,-0.0333463 A 0.05972519,0.05972519 0 0 1 0.48849569,0.0497764 C 0.49821769,0.0443321 0.50910619,0.04161 0.52116149,0.04161 c 0.0121849,0 0.0231058,0.0027221 0.032763,0.0081664 a 0.05991963,0.05991963 0 0 1 0.0228466,0.02265214 c 0.005574,0.0096571 0.008361,0.02077257 0.008361,0.0333463 0,0.0124441 -0.002787,0.0234947 -0.008361,0.0331519 a 0.06061637,0.06061637 0 0 1 -0.0228466,0.0227494 c -0.009657,0.005509 -0.0205781,0.008264 -0.032763,0.008263 z m 0.20429062,0.0353879 v -0.1259965 c 0,-0.0071294 0.002042,-0.01377277 0.006125,-0.01993 0.004083,-0.0061572 0.009657,-0.01111543 0.0167218,-0.01487459 0.007065,-0.0037592 0.015069,-0.0056387 0.0240132,-0.0056387 0.0129626,0 0.0232031,0.0041804 0.0307214,0.01254132 0.007518,0.0083609 0.0112775,0.01954112 0.0112775,0.03354073 v 0.12035777 h 0.0484153 V 0.07952557 c 0,-0.0071294 0.002009,-0.01380517 0.006028,-0.02002722 a 0.04402424,0.04402424 0 0 1 0.0165273,-0.01497181 c 0.007,-0.0037592 0.014907,-0.0056387 0.0237216,-0.0056387 0.0129626,0 0.0233003,0.0043101 0.031013,0.0129302 0.007713,0.0086201 0.0115691,0.02031888 0.0115691,0.03509624 V 0.20532763 H 1 V 0.0736924 C 1,0.0582669 0.99679176,0.04507745 0.99037527,0.03412405 A 0.06563938,0.06563938 0 0 0 0.964126,0.00884698 C 0.95304297,0.00294899 0.94037203,0 0.92611316,0 0.91107654,0 0.89785469,0.00340268 0.8864476,0.01020805 0.87504051,0.01701342 0.86486486,0.02676777 0.85592067,0.03947113 0.85086525,0.02741591 0.84221272,0.01782358 0.82996306,0.01069415 0.8177134,0.00356472 0.80374619,0 0.78806144,0 0.7758766,0 0.76469635,0.00246289 0.75452071,0.00738868 0.74434506,0.01231447 0.73465552,0.0198976 0.72545207,0.03013805 v -0.023916 h -0.0484153 v 0.19910558 z" fill="#FFF" fill-rule="nonzero"/>
+            </mask>
+            <clipPath id="logo-path" clipPathUnits="userSpaceOnUse">
+                <path style="transform:scale(var(--logo-size))" d="M 0.04841532,0.20532763 V 0.08671981 c 0,-0.0077776 0.0023009,-0.01503662 0.0069026,-0.02177717 a 0.05444293,0.05444293 0 0 1 0.0179856,-0.01652732 c 0.0073887,-0.0042777 0.01523106,-0.0064165 0.02352712,-0.0064165 0.0047962,0 0.01001361,7.7776e-4 0.01565235,0.0023333 0.005639,0.0015555 0.0105969,0.0036295 0.0148746,0.006222 L 0.14738479,0.00952751 A 0.06930132,0.06930132 0 0 0 0.12959362,0.00262493 0.08287964,0.08287964 0 0 0 0.10927474,0 C 0.09670102,0 0.0851643,0.00301381 0.07466459,0.00904142 0.06416488,0.01506903 0.05541513,0.02378638 0.04841532,0.03519347 V 0.00622205 H 0 v 0.19910558 z m 0.21829023,0.006222 c 0.0215179,0 0.0409294,-0.004472 0.0582345,-0.0134163 a 0.10379804,0.10379804 0 0 0 0.0410266,-0.0373323 c 0.010046,-0.015944 0.015069,-0.0342861 0.015069,-0.0550263 0,-0.02086979 -0.005023,-0.03924428 -0.015069,-0.05512347 A 0.10404109,0.10404109 0 0 0 0.32494005,0.01341629 C 0.30763497,0.0044721 0.28822348,0 0.26670555,0 0.24505801,0 0.2256141,0.0044721 0.20837384,0.01341629 A 0.10493227,0.10493227 0 0 0 0.1673472,0.05065137 C 0.1572364,0.06653056 0.152181,0.08490505 0.152181,0.10577484 c 0,0.0207402 0.005055,0.0390823 0.0151662,0.0550263 a 0.10451099,0.10451099 0 0 0 0.0411239,0.0373323 c 0.0173051,0.008944 0.0367166,0.0134163 0.0582345,0.0134162 z m 0,-0.04161 c -0.0120552,0 -0.0229438,-0.002755 -0.0326658,-0.008264 A 0.06042193,0.06042193 0 0 1 0.21109599,0.1389267 c -0.005574,-0.009657 -0.008361,-0.0207078 -0.008361,-0.0331519 0,-0.01257373 0.002787,-0.02368916 0.008361,-0.0333463 A 0.05972519,0.05972519 0 0 1 0.2340398,0.0497764 C 0.2437618,0.0443321 0.2546503,0.04161 0.2667056,0.04161 c 0.0121848,0 0.0231058,0.0027221 0.032763,0.0081664 a 0.05991963,0.05991963 0 0 1 0.0228466,0.02265214 c 0.005574,0.0096571 0.008361,0.02077257 0.008361,0.0333463 0,0.0124441 -0.002787,0.0234947 -0.008361,0.0331519 a 0.06061637,0.06061637 0 0 1 -0.0228466,0.0227494 c -0.009657,0.005509 -0.0205781,0.008264 -0.032763,0.008263 z m 0.2544559,0.04161 c 0.0215179,0 0.0409294,-0.004472 0.0582345,-0.0134163 a 0.10379804,0.10379804 0 0 0 0.0410266,-0.0373323 c 0.010046,-0.015944 0.015069,-0.0342861 0.015069,-0.0550263 0,-0.02086979 -0.005023,-0.03924428 -0.015069,-0.05512347 A 0.10404109,0.10404109 0 0 0 0.57939594,0.01341629 C 0.56209087,0.0044721 0.54267937,0 0.52116145,0 0.4995139,0 0.48007,0.0044721 0.46282974,0.01341629 A 0.10493227,0.10493227 0 0 0 0.4218031,0.05065137 C 0.4116923,0.06653056 0.4066369,0.08490505 0.4066369,0.10577484 c 0,0.0207402 0.005055,0.0390823 0.0151662,0.0550263 a 0.10451099,0.10451099 0 0 0 0.0411239,0.0373323 c 0.0173051,0.008944 0.0367166,0.0134163 0.0582345,0.0134162 z m 0,-0.04161 c -0.0120552,0 -0.0229438,-0.002755 -0.0326658,-0.008264 A 0.06042193,0.06042193 0 0 1 0.46555188,0.1389267 c -0.005574,-0.009657 -0.008361,-0.0207078 -0.008361,-0.0331519 0,-0.01257373 0.002787,-0.02368916 0.008361,-0.0333463 A 0.05972519,0.05972519 0 0 1 0.48849569,0.0497764 C 0.49821769,0.0443321 0.50910619,0.04161 0.52116149,0.04161 c 0.0121849,0 0.0231058,0.0027221 0.032763,0.0081664 a 0.05991963,0.05991963 0 0 1 0.0228466,0.02265214 c 0.005574,0.0096571 0.008361,0.02077257 0.008361,0.0333463 0,0.0124441 -0.002787,0.0234947 -0.008361,0.0331519 a 0.06061637,0.06061637 0 0 1 -0.0228466,0.0227494 c -0.009657,0.005509 -0.0205781,0.008264 -0.032763,0.008263 z m 0.20429062,0.0353879 v -0.1259965 c 0,-0.0071294 0.002042,-0.01377277 0.006125,-0.01993 0.004083,-0.0061572 0.009657,-0.01111543 0.0167218,-0.01487459 0.007065,-0.0037592 0.015069,-0.0056387 0.0240132,-0.0056387 0.0129626,0 0.0232031,0.0041804 0.0307214,0.01254132 0.007518,0.0083609 0.0112775,0.01954112 0.0112775,0.03354073 v 0.12035777 h 0.0484153 V 0.07952557 c 0,-0.0071294 0.002009,-0.01380517 0.006028,-0.02002722 a 0.04402424,0.04402424 0 0 1 0.0165273,-0.01497181 c 0.007,-0.0037592 0.014907,-0.0056387 0.0237216,-0.0056387 0.0129626,0 0.0233003,0.0043101 0.031013,0.0129302 0.007713,0.0086201 0.0115691,0.02031888 0.0115691,0.03509624 V 0.20532763 H 1 V 0.0736924 C 1,0.0582669 0.99679176,0.04507745 0.99037527,0.03412405 A 0.06563938,0.06563938 0 0 0 0.964126,0.00884698 C 0.95304297,0.00294899 0.94037203,0 0.92611316,0 0.91107654,0 0.89785469,0.00340268 0.8864476,0.01020805 0.87504051,0.01701342 0.86486486,0.02676777 0.85592067,0.03947113 0.85086525,0.02741591 0.84221272,0.01782358 0.82996306,0.01069415 0.8177134,0.00356472 0.80374619,0 0.78806144,0 0.7758766,0 0.76469635,0.00246289 0.75452071,0.00738868 0.74434506,0.01231447 0.73465552,0.0198976 0.72545207,0.03013805 v -0.023916 h -0.0484153 v 0.19910558 z" fill="#FFF" fill-rule="nonzero"/>
+            </clipPath>
+            <mask id="burger-mask">
+                <path style="transform:scale(var(--burger-size))" d="M1 .25V.15H0v.1zm0 .3V.45H0v.1zm0 .3V.75H0v.1z" fill="#FFF" fill-rule="evenodd"/>
+            </mask>
+            <clipPath id="burger-path" clipPathUnits="userSpaceOnUse">
+                <path style="transform:scale(var(--burger-size))" d="M1 .25V.15H0v.1zm0 .3V.45H0v.1zm0 .3V.75H0v.1z" fill="#FFF" fill-rule="evenodd"/>
+            </clipPath>
+            <mask id="close-mask">
+                <path style="transform:scale(var(--burger-size))" d="M.9091 1 1 .9091.5909.5 1 .0909.9091 0 .5.4091.0909 0 0 .0909.4091.5 0 .9091.0909 1 .5.5909Z" fill="#FFF" fill-rule="evenodd"/>
+            </mask>
+            <clipPath id="close-path" clipPathUnits="userSpaceOnUse">
+                <path style="transform:scale(var(--burger-size))" d="M.9091 1 1 .9091.5909.5 1 .0909.9091 0 .5.4091.0909 0 0 .0909.4091.5 0 .9091.0909 1 .5.5909Z" fill="#FFF" fill-rule="evenodd"/>
+            </clipPath>
+            <mask id="asdf-mask">
+                <path d="M0 0h50v2H0z" fill="#FFF" fill-rule="evenodd"/>
+            </mask>
+            <clipPath id="asdf-path" clipPathUnits="userSpaceOnUse">
+                <path d="M0 0h50v2H0z"/>
+            </clipPath>
+        </defs>
+    </svg>
+
+    <header class="container">
+        <div class="wrapper">
+            <button href="#mainnav" class="menu-toggle burger" id="menu-toggle">
+                <div class="icon">
+                    <div class="clip-bg"></div>
+                </div>
+            </button>
+        </div>
+        <a href="." class="logo-container">
+            <div id="logo" class="logo">
+                <div id="logo-background" class="logo-background clip-bg"></div>
+            </div>
+        </a>
+        <div class="spacer"></div>
+        <nav id="mainnav">
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div id="slider-grid" class="grid" data-desktop-logo-style="light">
+            <div class="col swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <picture data-mobile-logo-style="light">
+                            <source srcset="/img/desktop-image-hero-1.jpg?format=webp" type="image/webp" media="(min-width:600px)">
+                            <source srcset="/img/desktop-image-hero-1.jpg" type="image/jpeg" media="(min-width:600px)">
+    
+                            <source srcset="/img/mobile-image-hero-1.jpg?format=webp" type="image/webp">
+                            <img src="/img/mobile-image-hero-1.jpg" alt="test image" decoding="async" width="375" height="360">
+                        </picture>
+                        <div class="container col pt3 pb4" data-mobile-logo-style="dark">
+                            <h1>Discover innovative ways to decorate</h1>
+                            <p>We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.</p>
+                            <a href="/shop" class="btn mt2">Shop now</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="/img/desktop-image-hero-2.jpg?format=webp" type="image/webp" media="(min-width:600px)">
+                            <source srcset="/img/desktop-image-hero-2.jpg" type="image/jpeg" media="(min-width:600px)">
+                            
+                            <source srcset="/img/mobile-image-hero-2.jpg?format=webp" type="image/webp">
+                            <img src="/img/mobile-image-hero-2.jpg" alt="test image" decoding="async" width="375" height="360">
+                        </picture>
+                        <div class="container col pt3 pb4">
+                            <h1>We are available all across the globe</h1>
+                            <p>With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we’re in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don't hesitate to contact us today</p>
+                            <a href="/shop" class="btn mt2">Shop now</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="/img/desktop-image-hero-3.jpg?format=webp" type="image/webp" media="(min-width:600px)">
+                            <source srcset="/img/desktop-image-hero-3.jpg" type="image/jpeg" media="(min-width:600px)">
+                            
+                            <source srcset="/img/mobile-image-hero-3.jpg?format=webp" type="image/webp">
+                            <img src="/img/mobile-image-hero-3.jpg" alt="test image" decoding="async" width="375" height="360">
+                        </picture>
+                        <div class="container col pt3 pb4">
+                            <h1>Manufactured with the best materials</h1>
+                            <p>Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office.</p>
+                            <a href="/shop" class="btn mt2">Shop now</a>
+                        </div>
+                    </div>
+                </div>
+                <nav>
+                    <button class="swiper-button-prev">PREV</button>
+                    <button class="swiper-button-next">NEXT</button>
+                </nav>
+            </div>
+        </div>
+
+        <div class="foo">
+            <picture data-mobile-logo-style="light">
+                <source srcset="/img/image-about-dark.jpg?format=webp" type="image/webp">
+                <img src="/img/image-about-dark.jpg" alt="test image" decoding="async" width="420" height="266">
+            </picture>
+            <div class="container py3" data-mobile-logo-style="dark">
+                <h2>About our furniture</h2>
+                <p>Our multifunctional collection blends design and function to suit your individual taste. Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you need, from traditional to contemporary styles or anything in between. Product specialists are available to help you create your dream space.</p>
+            </div>
+            <picture data-mobile-logo-style="dark">
+                <source srcset="/img/image-about-light.jpg?format=webp" type="image/webp">
+                <img src="/img/image-about-light.jpg" alt="test image" decoding="async" width="420" height="266">
+            </picture>
+        </div>
+
+    </main>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/meelix">Meelix :3</a>.
+    </div>
+    <script type="module" src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+/* basic */
+.swiper-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper-wrapper {
+    z-index: 0;
+}
+
+.swiper-container nav {
+    position: absolute;
+    top: calc((360 / 375) * 100vw);
+    transform: translateY(-100%);
+    right: 0;
+    display: flex;
+}
+.swiper-container button {
+    width: 56px;
+    height: 56px;
+    font-size: 0;
+    padding: 0;
+    outline-color: var(--c-white);
+    position: relative;
+    font-size: 0 !important;
+    transform: none;
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.swiper-container button:after {
+    transition: background-color .1s ease-in-out;
+}
+.swiper-container button:hover:after,
+.swiper-container button:active:after {
+    background-color: var(--c-veryDarkGray);
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+    content: "\e900";
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    
+    font-size: 1.1rem;
+    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: var(--c-black);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--c-white);
+    width: 100%;
+    height: 100%;
+}
+.swiper-button-next:after {
+    content: "\e901";
+}
